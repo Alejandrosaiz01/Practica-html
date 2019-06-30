@@ -32,11 +32,11 @@
 }
 
 .logo {
-  /* align-self: center; */
+   align-self: center; 
   flex-shrink: 0;
   flex-grow: 1;
-  flex: 150px;
-  margin-left: 1rem;
+  flex: 250px;
+  margin-left: 2rem;
 
   font-family: 'Times New Roman', Times, serif;
   
