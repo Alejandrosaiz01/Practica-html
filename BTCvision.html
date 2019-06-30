@@ -5,22 +5,307 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Primera RWD</title>
+    <title>BTCVision</title>
     <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fluid-typography.css">
+    <link rel="stylesheet" href="css/navbar-flexbox.css">
+    <link rel="stylesheet" href="css/header-flexbox.css">
+    <link rel="stylesheet" href="css/que-hago.css">
+    <link rel="stylesheet" href="css/quien-soy.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/batallas.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
-    <nav>
+ <style>
+    p {
+        margin: 1rem;
+    }
 
-    </nav>
+    a.button {
+        border: solid 1px darkgray;
+        padding: .75rem;
+        background-color: lightgray;
+        text-align: center;
+        text-decoration: none;
+    }
 
-    <header>
+    a:hover.button {
+        background-color: darkgray;
+        color: white;
+    }
 
+    form label {
+        display: block;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    textarea {
+        width: 100%;
+        /* font-size: 1.1rem; */
+        padding: .5rem;
+    }
+
+    input[type="submit"] {
+        padding: .5rem;
+        font-size: 1.1rem;
+        min-width: 10rem;
+        border-radius: 20px;
+        border: 0;
+        background: deepskyblue;
+        background: linear-gradient(to right, #CCDDEE, #6DD5FA, #2980B9)
+    }
+
+    .container {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        border: solid 1px gray;
+        padding: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="index.html">
+            <p>
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <input type="submit" value="Acceder" name="enviar">
+               
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+        <nav class="navbar">
+        <div class="logo">BTC vison</div>
+        
+        <input type="checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger-label"></label>
+        
+         <ul class="navbar-list">
+            <li class="navbar-item"><a href="#Tops">Tops</a></li>
+            <li class="navbar-item"><a href="#nuestras-pelis">Tematica</a></li>
+            <li class="navbar-item"><a href="#novedad">mas Vistas</a></li>
+            <li class="navbar-item"><a href="#pelis">Pelis</a></li>
+            <li class="navbar-item"><a href="#contacto">Contacto</a></li>
+         </ul>
+        </nav>
+    <header class="header">
+        <h1>VISION
+            <span>Satoshi Nakamot0</span>
+            BTC</h1>
+        <!-- <div class="header-image"></div> -->
+        <p class="tagline">
+            Desde los estudios Cyberpunk os presentamos las mejores Pelis descentralizadas.
+        </p>
     </header>
+    
 
     <main>
-
+        <section id="nuestras-pelis">
+            <h1>Nuestras Pelis</h1>
+            <div class="flex-card-container">
+                <article class="flex-card">
+                    <img src="img/justintron.jpg" alt="Justin y TRON">
+                    <h2>Justin y TRON</h2>
+                    <p>
+                        El CEO de <strong> TRX (tron)</strong> Luchara por estar los 
+                        mas cerca de  <b> CARDANO</b>
+                        Pero no va a ser nada facil
+                        su Wallet  <i>YOROY</i> a sufrido del ataque de 
+                        <em>HACKERS</em>.Bajando estrepitosamente en el
+                        <sup>Cionmarketcap</sup>
+                        no podemos saber que pasara, ya veremos.
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/ripple.jpg">
+                    <h2>La Moneda Del Banco</h2>
+                    <p>
+                        Todos los bancos centralizados quieren hacerse con ella, pero no goza
+                        de buena reputacion, veremos que dice la bolsa de y el Dolar
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/cadano.jpg" alt="El regreso de ADA">
+                    <h2>El Regreso de ADA</h2>
+                    <p>
+                       Su rapidisimo <strong> Skate</strong> con pocas monedas y su rapidez 
+                       <em>Hacen la delicias</em> de sus holders propiciando una fuerte subida
+                       con la que entran en el <strong>TOP 10</strong> con una celbarcion TOTAL
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/Vitalik.jpg" alt="El Hermano pequeñp">
+                    <h2>El Hermano Pequeño</h2>
+                    <p>
+                        Despues del descalbro que los <strong>Ethereans</strong> sufrieron
+                        en Constantinopla con su fork fallido, es la hora que las nuevas Dapp
+                        inunden todo el continente con un Gas muy barato que hace que se afianze 
+                        en la posicion dos, ¿sera capaz de aguantar el ataque de Ligthing y de la 
+                        doble capa?
+                    </p>
+                </article>
+            </div>
+        </section>
+        
+        <section id="novedad" class="inverted">
+            <div class="centered">
+                <h1>Quién soy</h1>
+                <div class="two-columns">
+                    <div class="biography">
+                        <h2>LLEGO FACEBOOK</h2>
+                        <p>Como era de esperar llego El todo poderoso FACEBOOK con todos sus socios capitalistas.
+                            Despues de todo lo aprendido en estos 8 años de criptomedas y saco lo que seguramente
+                            haga las delicias de los inversores y a los que les gusta que siempre ganen los mismos.
+                        </p>
+                        <p>
+                           Un <strong>Peliculon</strong> que ha batido todos los records en su realizacion donde
+                           los bancos mas poderosos incluyendo a monedas centralizadas ha puesto toda la carne en el
+                           asador
+                        </p>
+                        <p>Junto a mi hermanastra Sansa Stark y con la ayuda de Ser Davos, Tormund y
+                            Brienne de Tarth, recuperé Invernalia y fui nombrado Rey en el Norte.
+                            Uniéndome a la Reina Dragón para luchar contra nuestro gran enemigo:
+                            el ejército del Rey de la Noche.
+                        </p>
+                        <blockquote>
+                            <p>You've got the North in you - the real North.</p>
+                            <footer>―Tormund</footer>
+                        </blockquote>
+                        <p>Por fin, volví al Castillo Negro, en el muro, para reunirme con Tormund
+                            y volver a donde era mi sitio, al norte, al verdadero norte.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <picture>
+                            <img src="img/libra.jpg" alt="libra">
+                        </picture>
+                        <div class="skill-name">Rentabildad</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-85"></div>
+                        </div>
+                        <div class="skill-name">Espectacion</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-75"></div>
+                        </div>
+                        <div class="skill-name">Centralizada</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-95"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Pelis">
+            <h1>Algunas de mis batallas</h1>
+            <div class="grid-container">
+        
+                <article>
+                    <h2>La batalla del Castillo Negro</h2>
+                    <img src="img/battle-of-castle-black.jpg" alt="Batalla del Castillo Negro">
+                    <p>
+                        Está encuadrada dentro de la guerra que mantiene la Guardia de la Noche
+                        contra los salvajes (llamados el Pueblo Libre). Esta batalla supone la
+                        derrota de los ejércitos de Mance Rayder y el triunfo de la Guardia con
+                        la colaboración imprescindible de Stannis Baratheon.
+                    </p>
+                </article>
+        
+                <article>
+                    <h2>La batalla de los bastardos</h2>
+                    <img src="img/battle-of-bastards.jpg" alt="Batalla de los Bastardos">
+                    <p>
+                        Durante la guerra de los Cinco Reinos, Jon Nieve y Sansa Stark recuperan
+                        Invernalia de la que Ramsay Bolton, el Guardián del Norte, se ha apoderado.
+                        Tras la batalla, la Casa Stark vuelve a controlar el norte.
+                    </p>
+                </article>
+        
+                <article>
+                    <h2>La batalla de Invernalia</h2>
+                    <img src="img/battle-of-winterfell.jpg" alt="Batalla de Invernalia">
+                    <p>
+                        Es la batalla final de la Gran Guerra entre una alianza de ejércitos
+                        (como los Starks, Arryns y Targaryans) contra el ejército de los muertos
+                        encabezados por los caminantes blancos.
+                    </p>
+                </article>
+        
+                <article>
+                    <h2>La batalla de Desembarco del Rey</h2>
+                    <img src="img/battle-of-kings-landing.jpg" alt="Batalla de Desembarco del Rey">
+                    <p>
+                        Batalla final entre los seguidores de Daenerys Targaryen y las
+                        fuerzas Lannister lideradas por la Reina Cersei Lannister para
+                        controlar Desembarco del Rey, la capital de los Siete Reinos y
+                        conseguir el Trono de Hierro.
+                    </p>
+                </article>
+        
+            </div>
+        </section>
+        
+        <section id="contacto" class="inverted">
+            <div class="centered">
+                <h1>Contacto</h1>
+                <form action="" id="contact-form">
+                    <div class="contact-data">
+                        <p>
+                            <label for="form-name">Nombre:</label>
+                            <input type="text" name="name" id="form-name" placeholder="Quién eres">
+                        </p>
+                        <p>
+                            <label for="form-email">e-mail:</label>
+                            <input type="email" name="form-email" id="form-email" placeholder="Tu email (no SPAM)">
+                        </p>
+                        <p>
+                            <label for="form-subject">Asunto:</label>
+                            <input type="text" name="form-subject" id="form-subject" placeholder="De qué me hablas">
+                        </p>
+                    </div>
+        
+                    <div class="message-data">
+                        <p>
+                            <label for="form-message">Mensaje:</label>
+                            <textarea name="form-message" id="form-message" cols="30" rows="10"
+                                placeholder="Deja tu mensaje"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    
 
     <footer>
 

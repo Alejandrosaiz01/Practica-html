@@ -38,8 +38,8 @@
   flex: 150px;
   margin-left: 1rem;
 
-  font-family: juego-tronos, 'Times New Roman', Times, serif;
-  /* font-variant: small-caps; */
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 #burger-checkbox {
